@@ -4,6 +4,7 @@ Built in Delphi Berlin 10.2
 
 ## Requirements:
 [TestInsight](https://bitbucket.org/sglienke/testinsight/wiki/Home)
+
 DUnitX: Choose to install with Delphi's installer
 
 ## Steps:
@@ -38,6 +39,7 @@ needs to be
 
 to handle double types
 
+See: 
 https://www.finalbuilder.com/resources/blogs/postid/697/introducing-dunitx
 
 
