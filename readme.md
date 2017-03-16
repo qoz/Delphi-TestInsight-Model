@@ -8,7 +8,7 @@ Built in Delphi Berlin 10.2
 DUnitX: Choose to install with Delphi's installer
 
 ## Steps:
-Create a new unit : New > Other > DUnit Project
+Create a new unit : New > Other > DUnitX Project
 Select checkboxes to create setup, teardown, and tests
 
 ### Then used this guide to build this app:
