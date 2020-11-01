@@ -6,6 +6,7 @@ type
  TMyEquations = class
   public
     function Equation(const T, A, B, C, D : Double): Double;
+    function Addition(a,b: double):double;
     function IsZero: integer;
   end;
 
@@ -20,6 +21,11 @@ uses
 function TMyEquations.IsZero: integer;
 begin
   result := 0;
+end;
+
+function TMyEquations.Addition(a, b: double): double;
+begin
+    Result := a + b;
 end;
 
 function TMyEquations.Equation(const T, A, B, C, D : Double): Double;

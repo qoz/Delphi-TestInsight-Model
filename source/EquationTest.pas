@@ -38,6 +38,11 @@ type
     procedure TestTemperatureRange;
     [Test]
     procedure TestZero;
+    [Test]
+    [TestCase('AddTest1','2,2,4')]
+    [TestCase('AddTest2','2.0,2,4')]
+    [TestCase('AddTest3','2.11,3.9,6.01')]
+    procedure TestAddition(a, b: double; aExpectedValue: double);
 
   end;
 
@@ -61,6 +66,11 @@ end;
 procedure TMyTestObject.TearDown;
 begin
     FMyEquations := nil;
+end;
+
+procedure TMyTestObject.TestAddition(a, b: double; aExpectedValue: double);
+begin
+    Assert.AreEqual<Double>(aExpectedValue, FMyEquations.Addition(a,b));
 end;
 
 procedure TMyTestObject.TestTemperatureRange;
